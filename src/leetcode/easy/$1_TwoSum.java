@@ -7,7 +7,7 @@ import java.util.Map;
 public class $1_TwoSum {
 
   public static void main(String[] args) {
-    Solution sol = new Solution();
+    $1_Solution sol = new $1_Solution();
 
     int[] nums = {3, 2, 4};
     int target = 6;
@@ -18,7 +18,7 @@ public class $1_TwoSum {
 }
 
 // one-pass solution
-class Solution {
+class $1_Solution {
   public int[] twoSum(int[] nums, int target) {
     // first pass
     Map<Integer, Integer> complements = new HashMap<>();
@@ -35,7 +35,7 @@ class Solution {
   }
 }
 
-class TwoPassSolution {
+class $1_TwoPassSolution {
   public int[] twoSum(int[] nums, int target) {
     // first pass
     Map<Integer, Integer> complements = new HashMap<>();
@@ -55,7 +55,7 @@ class TwoPassSolution {
   }
 }
 
-class BruteForceSolution {
+class $1_BruteForceSolution {
   public int[] twoSum(int[] nums, int target) {
     for (int i = 0; i < nums.length; i++) {
       for (int j = i + 1; j < nums.length; j++) {
